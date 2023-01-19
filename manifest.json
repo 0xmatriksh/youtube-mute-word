@@ -1,0 +1,25 @@
+{
+    "name": "Youtube Mute Word",
+    "version": "1.0.0",
+    "description": "extension to mute words in Youtube",
+    "manifest_version": 3,
+    "author": "Kishmat Bhattarai",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Latest Covid Report"
+    },
+    "permissions": [
+        "tabs",
+        "*://*.youtube.com"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
